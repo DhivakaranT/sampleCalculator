@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simpleCalculator</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 20px;
+}
+
+form {
+   background-color:#fff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   max-width: 400px;
+   margin: 0 auto;
+}
+
+input[type="text"], input[type="text"] {
+   width: 100%;
+   padding: 10px;
+   margin: 8px 0;
+   box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+   color: #fff;
+   padding: 10px 30px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   margin-right: 35px;
+   margin-left: 10px;
+}
+}
+
+input[type="submit"]:hover {
+   background-color: #45a049;
+}
+
+input[type="text"] {
+   border: 1px solid #ccc;
+   background-color: #f8f8f8;
+   padding: 10px;
+   margin-top: 10px;
+   width: calc(100% - 22px);
+   border-radius: 4px;
+   box-sizing: border-box;
+   color: #333;
+}
+h3{text-align: center;color: #3349FF;}
+
+
+</style>
+</head>
+<body>
+<form method="post" action="display">
+    {% csrf_token %}
+    <h3>SIMPLE CALCULATOR</h3>
+    <b>Number 1:</b><input type="text" name="txtno1" value="{{n1}}"><br>
+    <b>Number 2:</b><input type="text" name="txtno2" value="{{n2}}"><br>
+    <input type="submit" name="operation" value="Add">
+    <input type="submit" name="operation" value="Sub">
+    <input type="submit" name="operation" value="Mul">
+    <input type="text" name="txtresult" value="{{res}}">
+</form>
+</body>
+</html>
