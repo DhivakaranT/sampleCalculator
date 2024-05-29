@@ -1,2 +1,2 @@
 # sampleCalculator
-This project is a web-based calculator application designed to perform basic arithmetic operations such as addition, subtraction, and multiplication. The application is developed using Python and the Django framework for the backend, with HTML and CSS for the frontend.
+This project is a web-based calculator application designed to perform basic arithmetic operations such as addition, subtraction, and multiplication. The application is developed using Python and the Django framework for the backend, with HTML and CSS for the frontend.  The project serves as a practical demonstration of how to integrate Python programming with web development technologies to create a functional and user-friendly calculator.
